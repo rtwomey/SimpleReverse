@@ -1,0 +1,461 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E24CC15113A9269900C99637 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E24CC15013A9269900C99637 /* UIKit.framework */; };
+		E24CC15313A9269900C99637 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E24CC15213A9269900C99637 /* Foundation.framework */; };
+		E24CC15513A9269900C99637 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E24CC15413A9269900C99637 /* CoreGraphics.framework */; };
+		E24CC15B13A9269900C99637 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E24CC15913A9269900C99637 /* InfoPlist.strings */; };
+		E24CC15E13A9269900C99637 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E24CC15D13A9269900C99637 /* main.m */; };
+		E24CC16113A9269900C99637 /* SimpleReverseAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E24CC16013A9269900C99637 /* SimpleReverseAppDelegate.m */; };
+		E24CC16413A9269900C99637 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = E24CC16213A9269900C99637 /* MainWindow.xib */; };
+		E24CC16713A9269900C99637 /* SimpleReverseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E24CC16613A9269900C99637 /* SimpleReverseViewController.m */; };
+		E24CC16A13A9269900C99637 /* SimpleReverseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E24CC16813A9269900C99637 /* SimpleReverseViewController.xib */; };
+		E24CC17113A9269900C99637 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E24CC15013A9269900C99637 /* UIKit.framework */; };
+		E24CC17213A9269900C99637 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E24CC15213A9269900C99637 /* Foundation.framework */; };
+		E24CC17313A9269900C99637 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E24CC15413A9269900C99637 /* CoreGraphics.framework */; };
+		E24CC17B13A9269A00C99637 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E24CC17913A9269A00C99637 /* InfoPlist.strings */; };
+		E24CC17E13A9269A00C99637 /* SimpleReverseTests.h in Resources */ = {isa = PBXBuildFile; fileRef = E24CC17D13A9269A00C99637 /* SimpleReverseTests.h */; };
+		E24CC18013A9269A00C99637 /* SimpleReverseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E24CC17F13A9269A00C99637 /* SimpleReverseTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E24CC17413A9269900C99637 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E24CC14313A9269900C99637 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E24CC14B13A9269900C99637;
+			remoteInfo = SimpleReverse;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E24CC14C13A9269900C99637 /* SimpleReverse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleReverse.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E24CC15013A9269900C99637 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E24CC15213A9269900C99637 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E24CC15413A9269900C99637 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E24CC15813A9269900C99637 /* SimpleReverse-Info.plist */ = {isa = PBXFileReference; path = "SimpleReverse-Info.plist"; sourceTree = "<group>"; };
+		E24CC15A13A9269900C99637 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E24CC15C13A9269900C99637 /* SimpleReverse-Prefix.pch */ = {isa = PBXFileReference; path = "SimpleReverse-Prefix.pch"; sourceTree = "<group>"; };
+		E24CC15D13A9269900C99637 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E24CC15F13A9269900C99637 /* SimpleReverseAppDelegate.h */ = {isa = PBXFileReference; path = SimpleReverseAppDelegate.h; sourceTree = "<group>"; };
+		E24CC16013A9269900C99637 /* SimpleReverseAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleReverseAppDelegate.m; sourceTree = "<group>"; };
+		E24CC16313A9269900C99637 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		E24CC16513A9269900C99637 /* SimpleReverseViewController.h */ = {isa = PBXFileReference; path = SimpleReverseViewController.h; sourceTree = "<group>"; };
+		E24CC16613A9269900C99637 /* SimpleReverseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleReverseViewController.m; sourceTree = "<group>"; };
+		E24CC16913A9269900C99637 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SimpleReverseViewController.xib; sourceTree = "<group>"; };
+		E24CC17013A9269900C99637 /* SimpleReverseTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleReverseTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E24CC17813A9269900C99637 /* SimpleReverseTests-Info.plist */ = {isa = PBXFileReference; path = "SimpleReverseTests-Info.plist"; sourceTree = "<group>"; };
+		E24CC17A13A9269A00C99637 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E24CC17C13A9269A00C99637 /* SimpleReverseTests-Prefix.pch */ = {isa = PBXFileReference; path = "SimpleReverseTests-Prefix.pch"; sourceTree = "<group>"; };
+		E24CC17D13A9269A00C99637 /* SimpleReverseTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleReverseTests.h; sourceTree = "<group>"; };
+		E24CC17F13A9269A00C99637 /* SimpleReverseTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleReverseTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E24CC14913A9269900C99637 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E24CC15113A9269900C99637 /* UIKit.framework in Frameworks */,
+				E24CC15313A9269900C99637 /* Foundation.framework in Frameworks */,
+				E24CC15513A9269900C99637 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E24CC16C13A9269900C99637 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E24CC17113A9269900C99637 /* UIKit.framework in Frameworks */,
+				E24CC17213A9269900C99637 /* Foundation.framework in Frameworks */,
+				E24CC17313A9269900C99637 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E24CC14113A9269900C99637 = {
+			isa = PBXGroup;
+			children = (
+				E24CC15613A9269900C99637 /* SimpleReverse */,
+				E24CC17613A9269900C99637 /* SimpleReverseTests */,
+				E24CC14F13A9269900C99637 /* Frameworks */,
+				E24CC14D13A9269900C99637 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E24CC14D13A9269900C99637 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E24CC14C13A9269900C99637 /* SimpleReverse.app */,
+				E24CC17013A9269900C99637 /* SimpleReverseTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E24CC14F13A9269900C99637 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E24CC15013A9269900C99637 /* UIKit.framework */,
+				E24CC15213A9269900C99637 /* Foundation.framework */,
+				E24CC15413A9269900C99637 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E24CC15613A9269900C99637 /* SimpleReverse */ = {
+			isa = PBXGroup;
+			children = (
+				E24CC15F13A9269900C99637 /* SimpleReverseAppDelegate.h */,
+				E24CC16013A9269900C99637 /* SimpleReverseAppDelegate.m */,
+				E24CC16213A9269900C99637 /* MainWindow.xib */,
+				E24CC16513A9269900C99637 /* SimpleReverseViewController.h */,
+				E24CC16613A9269900C99637 /* SimpleReverseViewController.m */,
+				E24CC16813A9269900C99637 /* SimpleReverseViewController.xib */,
+				E24CC15713A9269900C99637 /* Supporting Files */,
+			);
+			path = SimpleReverse;
+			sourceTree = "<group>";
+		};
+		E24CC15713A9269900C99637 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E24CC15813A9269900C99637 /* SimpleReverse-Info.plist */,
+				E24CC15913A9269900C99637 /* InfoPlist.strings */,
+				E24CC15C13A9269900C99637 /* SimpleReverse-Prefix.pch */,
+				E24CC15D13A9269900C99637 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E24CC17613A9269900C99637 /* SimpleReverseTests */ = {
+			isa = PBXGroup;
+			children = (
+				E24CC17D13A9269A00C99637 /* SimpleReverseTests.h */,
+				E24CC17F13A9269A00C99637 /* SimpleReverseTests.m */,
+				E24CC17713A9269900C99637 /* Supporting Files */,
+			);
+			path = SimpleReverseTests;
+			sourceTree = "<group>";
+		};
+		E24CC17713A9269900C99637 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E24CC17813A9269900C99637 /* SimpleReverseTests-Info.plist */,
+				E24CC17913A9269A00C99637 /* InfoPlist.strings */,
+				E24CC17C13A9269A00C99637 /* SimpleReverseTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E24CC14B13A9269900C99637 /* SimpleReverse */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E24CC18313A9269A00C99637 /* Build configuration list for PBXNativeTarget "SimpleReverse" */;
+			buildPhases = (
+				E24CC14813A9269900C99637 /* Sources */,
+				E24CC14913A9269900C99637 /* Frameworks */,
+				E24CC14A13A9269900C99637 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimpleReverse;
+			productName = SimpleReverse;
+			productReference = E24CC14C13A9269900C99637 /* SimpleReverse.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E24CC16F13A9269900C99637 /* SimpleReverseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E24CC18613A9269A00C99637 /* Build configuration list for PBXNativeTarget "SimpleReverseTests" */;
+			buildPhases = (
+				E24CC16B13A9269900C99637 /* Sources */,
+				E24CC16C13A9269900C99637 /* Frameworks */,
+				E24CC16D13A9269900C99637 /* Resources */,
+				E24CC16E13A9269900C99637 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E24CC17513A9269900C99637 /* PBXTargetDependency */,
+			);
+			name = SimpleReverseTests;
+			productName = SimpleReverseTests;
+			productReference = E24CC17013A9269900C99637 /* SimpleReverseTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E24CC14313A9269900C99637 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Draconis Software";
+			};
+			buildConfigurationList = E24CC14613A9269900C99637 /* Build configuration list for PBXProject "SimpleReverse" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E24CC14113A9269900C99637;
+			productRefGroup = E24CC14D13A9269900C99637 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E24CC14B13A9269900C99637 /* SimpleReverse */,
+				E24CC16F13A9269900C99637 /* SimpleReverseTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E24CC14A13A9269900C99637 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E24CC15B13A9269900C99637 /* InfoPlist.strings in Resources */,
+				E24CC16413A9269900C99637 /* MainWindow.xib in Resources */,
+				E24CC16A13A9269900C99637 /* SimpleReverseViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E24CC16D13A9269900C99637 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E24CC17B13A9269A00C99637 /* InfoPlist.strings in Resources */,
+				E24CC17E13A9269A00C99637 /* SimpleReverseTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E24CC16E13A9269900C99637 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E24CC14813A9269900C99637 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E24CC15E13A9269900C99637 /* main.m in Sources */,
+				E24CC16113A9269900C99637 /* SimpleReverseAppDelegate.m in Sources */,
+				E24CC16713A9269900C99637 /* SimpleReverseViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E24CC16B13A9269900C99637 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E24CC18013A9269A00C99637 /* SimpleReverseTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E24CC17513A9269900C99637 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E24CC14B13A9269900C99637 /* SimpleReverse */;
+			targetProxy = E24CC17413A9269900C99637 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E24CC15913A9269900C99637 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E24CC15A13A9269900C99637 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E24CC16213A9269900C99637 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E24CC16313A9269900C99637 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		E24CC16813A9269900C99637 /* SimpleReverseViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E24CC16913A9269900C99637 /* en */,
+			);
+			name = SimpleReverseViewController.xib;
+			sourceTree = "<group>";
+		};
+		E24CC17913A9269A00C99637 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E24CC17A13A9269A00C99637 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E24CC18113A9269A00C99637 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E24CC18213A9269A00C99637 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		E24CC18413A9269A00C99637 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SimpleReverse/SimpleReverse-Prefix.pch";
+				INFOPLIST_FILE = "SimpleReverse/SimpleReverse-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E24CC18513A9269A00C99637 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SimpleReverse/SimpleReverse-Prefix.pch";
+				INFOPLIST_FILE = "SimpleReverse/SimpleReverse-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		E24CC18713A9269A00C99637 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SimpleReverse.app/SimpleReverse";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SimpleReverseTests/SimpleReverseTests-Prefix.pch";
+				INFOPLIST_FILE = "SimpleReverseTests/SimpleReverseTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		E24CC18813A9269A00C99637 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SimpleReverse.app/SimpleReverse";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SimpleReverseTests/SimpleReverseTests-Prefix.pch";
+				INFOPLIST_FILE = "SimpleReverseTests/SimpleReverseTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E24CC14613A9269900C99637 /* Build configuration list for PBXProject "SimpleReverse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E24CC18113A9269A00C99637 /* Debug */,
+				E24CC18213A9269A00C99637 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E24CC18313A9269A00C99637 /* Build configuration list for PBXNativeTarget "SimpleReverse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E24CC18413A9269A00C99637 /* Debug */,
+				E24CC18513A9269A00C99637 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E24CC18613A9269A00C99637 /* Build configuration list for PBXNativeTarget "SimpleReverseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E24CC18713A9269A00C99637 /* Debug */,
+				E24CC18813A9269A00C99637 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E24CC14313A9269900C99637 /* Project object */;
+}
