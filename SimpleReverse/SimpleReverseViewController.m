@@ -10,40 +10,69 @@
 
 @implementation SimpleReverseViewController
 
-- (void)dealloc
-{
-    [super dealloc];
+@synthesize locationManager;
+@synthesize latLabel, lngLabel;
+
+- (void)didReceiveMemoryWarning {
+	// Releases the view if it doesn't have a superview.
+	[super didReceiveMemoryWarning];
+	
+	// Release any cached data, images, etc that aren't in use.
 }
 
-- (void)didReceiveMemoryWarning
-{
-    // Releases the view if it doesn't have a superview.
-    [super didReceiveMemoryWarning];
-    
-    // Release any cached data, images, etc that aren't in use.
+#pragma mark - CLLocationManager
+
+- (void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation {
+	// wait until we are within a certain level of accuracy
+	if(newLocation.horizontalAccuracy <= 70.0f) {
+		[locationManager stopUpdatingLocation];
+	}
+	
+	latLabel.text = [NSString stringWithFormat:@"%f", newLocation.coordinate.latitude];
+	lngLabel.text = [NSString stringWithFormat:@"%f", newLocation.coordinate.longitude];
+}
+
+- (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error {
+	UIAlertView *prompt = [[UIAlertView alloc] initWithTitle: @"CLLocation Error" 
+																									 message: error.description
+																									delegate: nil 
+																				 cancelButtonTitle: @"OK" 
+																				 otherButtonTitles: nil];
+	
+	[prompt show];
+	[prompt release];
 }
 
 #pragma mark - View lifecycle
 
-/*
-// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-}
-*/
-
-- (void)viewDidUnload
-{
-    [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
+- (void)viewDidLoad {
+	[super viewDidLoad];
+	
+	self.locationManager = [[CLLocationManager alloc] init];
+	self.locationManager.delegate = self;
 }
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-    // Return YES for supported orientations
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+- (void)viewWillAppear:(BOOL)animated {
+	[super viewWillAppear:animated];
+
+	[locationManager startUpdatingLocation];
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+	[super viewWillDisappear:animated];
+	
+	[locationManager stopUpdatingLocation];
+}
+
+- (void)viewDidUnload {
+	[super viewDidUnload];
+
+	self.locationManager = nil;
+}
+
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+	// Return YES for supported orientations
+	return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
 @end

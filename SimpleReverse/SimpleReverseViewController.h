@@ -7,9 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreLocation/CoreLocation.h>
 
-@interface SimpleReverseViewController : UIViewController {
-    
+@interface SimpleReverseViewController : UIViewController<CLLocationManagerDelegate> {
+	CLLocationManager* locationManager;
+	
+	UILabel* latLabel;
+	UILabel* lngLabel;
 }
+
+@property(nonatomic, retain) CLLocationManager* locationManager;
+
+@property(nonatomic, retain) IBOutlet UILabel* latLabel;
+@property(nonatomic, retain) IBOutlet UILabel* lngLabel;
 
 @end
