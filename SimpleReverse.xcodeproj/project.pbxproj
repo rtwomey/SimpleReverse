@@ -22,6 +22,14 @@
 		E24CC17B13A9269A00C99637 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E24CC17913A9269A00C99637 /* InfoPlist.strings */; };
 		E24CC17E13A9269A00C99637 /* SimpleReverseTests.h in Resources */ = {isa = PBXBuildFile; fileRef = E24CC17D13A9269A00C99637 /* SimpleReverseTests.h */; };
 		E24CC18013A9269A00C99637 /* SimpleReverseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E24CC17F13A9269A00C99637 /* SimpleReverseTests.m */; };
+		E24CC18B13A926EA00C99637 /* SimpleGeo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E24CC18913A926EA00C99637 /* SimpleGeo.framework */; };
+		E24CC18C13A926EA00C99637 /* YAJLiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E24CC18A13A926EA00C99637 /* YAJLiOS.framework */; };
+		E24CC18E13A9270500C99637 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E24CC18D13A9270500C99637 /* CFNetwork.framework */; };
+		E24CC19013A9270E00C99637 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E24CC18F13A9270E00C99637 /* SystemConfiguration.framework */; };
+		E24CC19213A9271700C99637 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E24CC19113A9271700C99637 /* MobileCoreServices.framework */; };
+		E24CC19413A9272000C99637 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E24CC19313A9272000C99637 /* libz.dylib */; };
+		E24CC19E13A92B0400C99637 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E24CC19D13A92B0400C99637 /* MapKit.framework */; };
+		E24CC1A013A92B2700C99637 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E24CC19F13A92B2700C99637 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,22 +47,30 @@
 		E24CC15013A9269900C99637 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E24CC15213A9269900C99637 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E24CC15413A9269900C99637 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		E24CC15813A9269900C99637 /* SimpleReverse-Info.plist */ = {isa = PBXFileReference; path = "SimpleReverse-Info.plist"; sourceTree = "<group>"; };
+		E24CC15813A9269900C99637 /* SimpleReverse-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SimpleReverse-Info.plist"; sourceTree = "<group>"; };
 		E24CC15A13A9269900C99637 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		E24CC15C13A9269900C99637 /* SimpleReverse-Prefix.pch */ = {isa = PBXFileReference; path = "SimpleReverse-Prefix.pch"; sourceTree = "<group>"; };
+		E24CC15C13A9269900C99637 /* SimpleReverse-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SimpleReverse-Prefix.pch"; sourceTree = "<group>"; };
 		E24CC15D13A9269900C99637 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		E24CC15F13A9269900C99637 /* SimpleReverseAppDelegate.h */ = {isa = PBXFileReference; path = SimpleReverseAppDelegate.h; sourceTree = "<group>"; };
+		E24CC15F13A9269900C99637 /* SimpleReverseAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleReverseAppDelegate.h; sourceTree = "<group>"; };
 		E24CC16013A9269900C99637 /* SimpleReverseAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleReverseAppDelegate.m; sourceTree = "<group>"; };
 		E24CC16313A9269900C99637 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		E24CC16513A9269900C99637 /* SimpleReverseViewController.h */ = {isa = PBXFileReference; path = SimpleReverseViewController.h; sourceTree = "<group>"; };
+		E24CC16513A9269900C99637 /* SimpleReverseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleReverseViewController.h; sourceTree = "<group>"; };
 		E24CC16613A9269900C99637 /* SimpleReverseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleReverseViewController.m; sourceTree = "<group>"; };
 		E24CC16913A9269900C99637 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SimpleReverseViewController.xib; sourceTree = "<group>"; };
 		E24CC17013A9269900C99637 /* SimpleReverseTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleReverseTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E24CC17813A9269900C99637 /* SimpleReverseTests-Info.plist */ = {isa = PBXFileReference; path = "SimpleReverseTests-Info.plist"; sourceTree = "<group>"; };
+		E24CC17813A9269900C99637 /* SimpleReverseTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SimpleReverseTests-Info.plist"; sourceTree = "<group>"; };
 		E24CC17A13A9269A00C99637 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		E24CC17C13A9269A00C99637 /* SimpleReverseTests-Prefix.pch */ = {isa = PBXFileReference; path = "SimpleReverseTests-Prefix.pch"; sourceTree = "<group>"; };
+		E24CC17C13A9269A00C99637 /* SimpleReverseTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SimpleReverseTests-Prefix.pch"; sourceTree = "<group>"; };
 		E24CC17D13A9269A00C99637 /* SimpleReverseTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleReverseTests.h; sourceTree = "<group>"; };
 		E24CC17F13A9269A00C99637 /* SimpleReverseTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleReverseTests.m; sourceTree = "<group>"; };
+		E24CC18913A926EA00C99637 /* SimpleGeo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SimpleGeo.framework; path = ext/SimpleGeo.framework; sourceTree = "<group>"; };
+		E24CC18A13A926EA00C99637 /* YAJLiOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = YAJLiOS.framework; path = ext/YAJLiOS.framework; sourceTree = "<group>"; };
+		E24CC18D13A9270500C99637 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		E24CC18F13A9270E00C99637 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		E24CC19113A9271700C99637 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		E24CC19313A9272000C99637 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		E24CC19D13A92B0400C99637 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		E24CC19F13A92B2700C99637 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,9 +78,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E24CC1A013A92B2700C99637 /* CoreLocation.framework in Frameworks */,
+				E24CC19E13A92B0400C99637 /* MapKit.framework in Frameworks */,
+				E24CC19413A9272000C99637 /* libz.dylib in Frameworks */,
+				E24CC19213A9271700C99637 /* MobileCoreServices.framework in Frameworks */,
+				E24CC19013A9270E00C99637 /* SystemConfiguration.framework in Frameworks */,
+				E24CC18E13A9270500C99637 /* CFNetwork.framework in Frameworks */,
 				E24CC15113A9269900C99637 /* UIKit.framework in Frameworks */,
 				E24CC15313A9269900C99637 /* Foundation.framework in Frameworks */,
 				E24CC15513A9269900C99637 /* CoreGraphics.framework in Frameworks */,
+				E24CC18B13A926EA00C99637 /* SimpleGeo.framework in Frameworks */,
+				E24CC18C13A926EA00C99637 /* YAJLiOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +130,14 @@
 				E24CC15013A9269900C99637 /* UIKit.framework */,
 				E24CC15213A9269900C99637 /* Foundation.framework */,
 				E24CC15413A9269900C99637 /* CoreGraphics.framework */,
+				E24CC18913A926EA00C99637 /* SimpleGeo.framework */,
+				E24CC18A13A926EA00C99637 /* YAJLiOS.framework */,
+				E24CC19113A9271700C99637 /* MobileCoreServices.framework */,
+				E24CC18F13A9270E00C99637 /* SystemConfiguration.framework */,
+				E24CC18D13A9270500C99637 /* CFNetwork.framework */,
+				E24CC19D13A92B0400C99637 /* MapKit.framework */,
+				E24CC19F13A92B2700C99637 /* CoreLocation.framework */,
+				E24CC19313A9272000C99637 /* libz.dylib */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -360,6 +392,10 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/ext\"",
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SimpleReverse/SimpleReverse-Prefix.pch";
@@ -374,6 +410,10 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/ext\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SimpleReverse/SimpleReverse-Prefix.pch";
 				INFOPLIST_FILE = "SimpleReverse/SimpleReverse-Info.plist";
