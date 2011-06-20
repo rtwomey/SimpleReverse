@@ -11,7 +11,7 @@
 @implementation SimpleReverseViewController
 
 @synthesize locationManager, sgClient;
-@synthesize latLabel, lngLabel, addressLabel;
+@synthesize latLabel, lngLabel, addressLabel, weatherLabel;
 
 - (void)didReceiveMemoryWarning {
 	// Releases the view if it doesn't have a superview.
@@ -57,18 +57,33 @@
 - (void)didLoadContext:(NSDictionary *)context forQuery:(NSDictionary *)query {
 	[[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
 
-	NSLog(@"result = %@", context);
-	
 	NSDictionary* addrProperties = [[context objectForKey:@"address"] objectForKey:@"properties"];
 	
-	// TODO: currently only getting city, province, and country - needs street address too
+	// be sure to check for "address" string for street address - it's not always present
+	NSString* addrStr = [NSString stringWithFormat:@"%@, %@ %@", 
+											 [addrProperties objectForKey:@"city"],
+											 [addrProperties objectForKey:@"province"],
+											 [addrProperties objectForKey:@"country"]];
+	addressLabel.text = addrStr;
 	
-	NSString* addrString = [NSString stringWithFormat:@"%@, %@ %@", 
-													[addrProperties objectForKey:@"city"],
-													[addrProperties objectForKey:@"province"],
-													[addrProperties objectForKey:@"country"]];
+	// just for fun, let's get the weather too
+	NSDictionary* weatherProperties = [context objectForKey:@"weather"];
 	
-	addressLabel.text = addrString;
+	NSString* weatherStr = [NSString stringWithFormat:@"Cloud cover: %@\nConditions: %@\nTemp: %@",
+													[weatherProperties objectForKey:@"cloud_cover"],
+													[weatherProperties objectForKey:@"conditions"],
+													[weatherProperties objectForKey:@"temperature"]];
+	
+	NSDictionary* tomorrow = [[weatherProperties objectForKey:@"forecast"] objectForKey:@"tomorrow"];
+	
+	weatherStr = [NSString stringWithFormat:@"%@\nTomorrow:\n  Conditions: %@\n  Precipitation: %@\n  Low: %@, High: %@",
+								weatherStr,
+								[tomorrow objectForKey:@"conditions"],
+								[tomorrow objectForKey:@"precipitation"],
+								[[tomorrow objectForKey:@"temperature"] objectForKey:@"min"],
+								[[tomorrow objectForKey:@"temperature"] objectForKey:@"max"]];
+	
+	weatherLabel.text = weatherStr;
 	
 	self.sgClient = nil;
 }

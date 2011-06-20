@@ -17,6 +17,7 @@
 	UILabel* latLabel;
 	UILabel* lngLabel;
 	UILabel* addressLabel;
+	UILabel* weatherLabel;
 }
 
 @property(nonatomic, retain) CLLocationManager* locationManager;
@@ -25,5 +26,6 @@
 @property(nonatomic, retain) IBOutlet UILabel* latLabel;
 @property(nonatomic, retain) IBOutlet UILabel* lngLabel;
 @property(nonatomic, retain) IBOutlet UILabel* addressLabel;
+@property(nonatomic, retain) IBOutlet UILabel* weatherLabel;
 
 @end
