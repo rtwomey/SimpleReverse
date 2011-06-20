@@ -10,8 +10,8 @@
 
 @implementation SimpleReverseViewController
 
-@synthesize locationManager;
-@synthesize latLabel, lngLabel;
+@synthesize locationManager, sgClient;
+@synthesize latLabel, lngLabel, addressLabel;
 
 - (void)didReceiveMemoryWarning {
 	// Releases the view if it doesn't have a superview.
@@ -20,12 +20,21 @@
 	// Release any cached data, images, etc that aren't in use.
 }
 
-#pragma mark - CLLocationManager
+#pragma mark - CLLocationManagerDelegate
 
 - (void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation {
 	// wait until we are within a certain level of accuracy
 	if(newLocation.horizontalAccuracy <= 70.0f) {
 		[locationManager stopUpdatingLocation];
+		
+		[[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
+
+		self.sgClient = [SimpleGeo clientWithDelegate:self 
+																			consumerKey:@"-CONSUMER_KEY-" 
+																	 consumerSecret:@"-CONSUMER_SECRET-"];
+		
+		[sgClient getContextForPoint:[SGPoint pointWithLatitude:newLocation.coordinate.latitude 
+																									longitude:newLocation.coordinate.longitude]];
 	}
 	
 	latLabel.text = [NSString stringWithFormat:@"%f", newLocation.coordinate.latitude];
@@ -42,6 +51,28 @@
 	[prompt show];
 	[prompt release];
 }
+
+#pragma mark - SimpleGeo
+
+- (void)didLoadContext:(NSDictionary *)context forQuery:(NSDictionary *)query {
+	[[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
+
+	NSLog(@"result = %@", context);
+	
+	NSDictionary* addrProperties = [[context objectForKey:@"address"] objectForKey:@"properties"];
+	
+	// TODO: currently only getting city, province, and country - needs street address too
+	
+	NSString* addrString = [NSString stringWithFormat:@"%@, %@ %@", 
+													[addrProperties objectForKey:@"city"],
+													[addrProperties objectForKey:@"province"],
+													[addrProperties objectForKey:@"country"]];
+	
+	addressLabel.text = addrString;
+	
+	self.sgClient = nil;
+}
+
 
 #pragma mark - View lifecycle
 
